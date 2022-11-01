@@ -8,8 +8,8 @@ class HeaderIndex extends Component {
                 <span>EstÁgil</span>
                 <nav>
                 <ul>
-                    <li className="lista-inicio"><a href="/index.html">Início</a></li>
-                    <li><a href="/estagios.html">Estágios</a></li>
+                    <li className="lista-inicio"><a href="/index.html" className="lista-hover">Início</a></li>
+                    <li><a href="/estagios.html" className="lista-hover">Estágios</a></li>
                     <li className="menu-suspenso">
                     <a href="#" className="lista-login">Login</a>
                     <ul>
