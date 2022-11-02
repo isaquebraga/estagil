@@ -1,19 +1,22 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
-class HeaderIndex extends Component {
+import "./header-home.css";
+
+class HeaderHome extends Component {
     render(){
         return(
             <>
-            <header>
+            <header className="header-home">
                 <span>EstÁgil</span>
                 <nav>
                 <ul>
-                    <li className="lista-inicio"><a href="/index.html" className="lista-hover">Início</a></li>
+                    <li><Link to='/' className="lista-hover active">Home</Link></li>
                     <li><a href="/estagios.html" className="lista-hover">Estágios</a></li>
                     <li className="menu-suspenso">
-                    <a href="#" className="lista-login">Login</a>
+                    <a className="lista-login">Login</a>
                     <ul>
-                        <li><a href="#">Aluno</a></li>
+                        <li><Link to='/login-aluno'>Aluno</Link></li>
                         <li><a href="#">Empresa</a></li>
                     </ul>
                     </li>
@@ -25,4 +28,4 @@ class HeaderIndex extends Component {
     }
 }
 
-export default HeaderIndex;
+export default HeaderHome;

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 
-import instagram from "../../assets/img/instagram.png"
-import facebook from "../../assets/img/facebook.png"
-import twitter from "../../assets/img/twitter.png"
+import instagram from "../../../assets/img/instagram.png"
+import facebook from "../../../assets/img/facebook.png"
+import twitter from "../../../assets/img/twitter.png"
+
+import "./section-main.css";
 
 class SectionMain extends Component {
     render(){

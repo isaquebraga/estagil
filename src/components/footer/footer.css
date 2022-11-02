@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEAE6;
+    font-family: 'Poppins';
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-size: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 100px;
+}
+
+footer ul a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul a li {
+    padding-bottom: 10px;
+}
+
+footer p {
+    padding-left: 100px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.texto-footer p {
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.redes-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.redes-footer img {
+    width: 35px;
+}
+
+@media screen and (max-width: 319px) {
+    footer {
+        width: 120vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* tela de celular */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+}
+
+/* tela de tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* tela de notebook */
+@media screen and (min-width: 1024px) and (max-width: 1679px) {
+}
+
+/* tela de desktop */
+@media screen and (min-width: 1680px) {
+}

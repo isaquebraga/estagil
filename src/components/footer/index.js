@@ -4,7 +4,9 @@ import instagram from "../../assets/img/instagram-footer.png"
 import facebook from "../../assets/img/facebook-footer.png"
 import twitter from "../../assets/img/twitter-footer.png"
 
-class FooterIndex extends Component {
+import "./footer.css"
+
+class Footer extends Component {
     render(){
         return(
             <>
@@ -23,4 +25,4 @@ class FooterIndex extends Component {
     }
 }
 
-export default FooterIndex;
+export default Footer;

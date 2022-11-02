@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "./section-criadores.css";
+
 class SectionCriadores extends Component {
     render(){
         return(

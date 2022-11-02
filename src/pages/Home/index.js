@@ -1,20 +1,18 @@
 import React, { Component } from "react";
 
-import HeaderIndex from "../../components/header";
-import SectionMain from "../../components/section";
-import SectionCriadores from "../../components/criadores";
-import FooterIndex from "../../components/footer";
-
-import "./style.css";
+import Header from "../../components/home/header";
+import SectionMain from "../../components/home/section-main";
+import SectionCriadores from "../../components/home/section-criadores";
+import Footer from "../../components/footer";
 
 class Home extends Component {
     render() {
         return (
             <>
-                <HeaderIndex />
+                <Header />
                 <SectionMain />
                 <SectionCriadores />
-                <FooterIndex />
+                <Footer />
             </>
         );
     }
