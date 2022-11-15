@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
-import Header from "../../components/login-aluno/header"
+import Header from "../../components/login-aluno/header-login"
+import SectionLogin from "../../components/login-aluno/section-login"
 
 class LoginAluno extends Component {
     render() {
         return (
             <>
             <Header />
-            <p>LOGIN DO ALUNO AQUI</p>
+            <SectionLogin />
             </>
         );
     }

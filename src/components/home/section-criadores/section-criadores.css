@@ -6,17 +6,15 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #EFEAE6;
-    font-family: 'Poppins';
-}
-
 .criadores {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #EFEAE6;
+    font-family: 'Poppins';
 }
 
 .criadores button {

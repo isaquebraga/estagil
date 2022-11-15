@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body {
+.main-section {
     background-color: #EFEAE6;
     font-family: 'Poppins';
 }
@@ -21,6 +21,8 @@ section .email {
 }
 
 .meio {
+    background-color: #EFEAE6;
+    font-family: 'Poppins';
     display: flex;
     flex-direction: column;
     align-items: center;

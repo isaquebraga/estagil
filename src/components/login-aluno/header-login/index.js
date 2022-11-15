@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 
-class HeaderLoginAluno extends Component {
+import "./header-login.css";
+
+class HeaderLogin extends Component {
     render(){
         return(
             <>
-            <header className="header-index">
+            <header className="header-login">
                 <span>EstÁgil</span>
                 <nav>
                 <ul>
-                    <li><Link to='/' className="lista-hover">Home</Link></li>
+                    <li><Link to='/' className="lista-hover">Início</Link></li>
                     <li><a href="/estagios.html" className="lista-hover">Estágios</a></li>
                     <li className="menu-suspenso">
                     <a className="lista-login active">Login</a>
@@ -26,4 +28,4 @@ class HeaderLoginAluno extends Component {
     }
 }
 
-export default HeaderLoginAluno;
+export default HeaderLogin;
