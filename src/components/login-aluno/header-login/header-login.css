@@ -30,6 +30,14 @@
     font-weight: 400;
 }
 
+.header-login .lista-hover:hover {
+    border-bottom: 2px solid #FFFFFF;
+    -webkit-transition: 0.5ms ease-in;
+    -moz-transition: 0.5ms ease-in;
+    -o-transition: 0.5ms ease-in;
+    transition: 0.5ms ease-in;
+}
+
 .header-login .topnav {
     display: none;
 }
@@ -52,6 +60,11 @@
     border-radius: 0 0 5px 5px;
     width: 96px;
     transition: 0.3s;
+}
+
+.header-login .menu-suspenso ul li a:hover {
+    color: #000000;
+    font-weight: 700;
 }
 
 .header-login nav ul ul {

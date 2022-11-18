@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import eye from "../../../assets/img/eye.svg";
-import eyeOff from "../../../assets/img/eye-off.svg";
 
 import "./section-login.css";
 
