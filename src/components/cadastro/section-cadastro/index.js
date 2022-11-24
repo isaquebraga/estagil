@@ -2,21 +2,24 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 
 import eye from "../../../assets/img/eye.svg";
-import eyeOff from "../../../assets/img/eye-off.svg";
 
-import "./section-login.css";
+import "./section-cadastro.css";
 
-class SectionLogin extends Component {
+class SectionCadastro extends Component {
     render(){
         return(
             <>
-            <section className="section-login">
+            <section className="section-cadastro">
             <div className="content-right">
                 <h1>Est</h1>
                 <h1>Ágil</h1>
             </div>
             <div className="content-left">
                 <form>
+                    <div className="input">
+                        <label htmlFor="text">Nome</label>
+                        <input type="texte" id="text" />
+                    </div>
                     <div className="input">
                         <label htmlFor="email">Email</label>
                         <input type="email" id="email" />
@@ -25,7 +28,7 @@ class SectionLogin extends Component {
                         <label htmlFor="senha">Senha</label>
                         <div className="input-password">
                         <input className="input-password-input" type="password" id="senha" />
-                        <img id="olho" className="input-password-img" src={eye} alt="" onClick={() =>{let btn = document.querySelector('.input-password-img');
+                        <img className="input-password-img" src={eye} alt="" onClick={() =>{let btn = document.querySelector('.input-password-img');
                                                                                             btn.addEventListener('click', function() {
                                                                                                 let input = document.querySelector('.input-password-input');
                                                                                                 if(input.getAttribute('type') == 'password') {
@@ -37,9 +40,7 @@ class SectionLogin extends Component {
                         </div>
                     </div>
                     <div className="footer-form">
-                        <p className="forget">Esqueceu sua senha? <Link to='/'>Esqueci.</Link></p>
-                        <button>Login</button>
-                        <p className="create">Não possui uma conta? <Link to='/cadastro'>Cadastrar.</Link></p>
+                        <button>Cadastrar</button>
                     </div>
                 </form>
             </div>
@@ -49,4 +50,4 @@ class SectionLogin extends Component {
     }
 }
 
-export default SectionLogin;
+export default SectionCadastro;
