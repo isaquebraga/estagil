@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 
 import eye from "../../../assets/img/eye.svg";
-import eyeOff from "../../../assets/img/eye-off.svg";
 
 import "./section-login.css";
 

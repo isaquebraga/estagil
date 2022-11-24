@@ -109,6 +109,7 @@ body {
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 700;
+<<<<<<< HEAD
     font-size: 170px;
     line-height: 160px;
 }
@@ -119,17 +120,37 @@ body {
     }
 
     .section-login .input input {
+=======
+    font-size: 200px;
+    line-height: 190px;
+}
+
+@media screen and (min-width: 1680px) {
+    .content-left form {
+        margin-top: 25%;
+    }
+
+    .input input {
+>>>>>>> 63e235b54aab50241310b2deaff4a441751a5528
         height: 45px;
         width: 370px;
         font-size: 15px;
     }
 
+<<<<<<< HEAD
     .section-login .footer-form p{
+=======
+    .footer-form p{
+>>>>>>> 63e235b54aab50241310b2deaff4a441751a5528
         padding-top: 10px;
         font-size: 11px;
     }
     
+<<<<<<< HEAD
     .section-login .footer-form {
+=======
+    .footer-form {
+>>>>>>> 63e235b54aab50241310b2deaff4a441751a5528
         margin: 10px;
         display: flex;
         flex-direction: column;
@@ -138,7 +159,11 @@ body {
         font-size: 10px;
     }
     
+<<<<<<< HEAD
     .section-login .content-right h1 {
+=======
+    .content-right h1 {
+>>>>>>> 63e235b54aab50241310b2deaff4a441751a5528
         font-size: 250px;
         line-height: 240px;
     }
