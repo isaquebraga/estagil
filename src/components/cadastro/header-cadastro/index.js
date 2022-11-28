@@ -12,7 +12,7 @@ class HeaderCadastro extends Component {
                 <nav>
                 <ul>
                     <li><Link to='/' className="lista-hover">Início</Link></li>
-                    <li><a href="/estagios.html" className="lista-hover">Estágios</a></li>
+                    <li><Link to='/estagios' className="lista-hover"><a>Estágios</a></Link></li>
                     <li className="menu-suspenso">
                     <a className="lista-login active">Login</a>
                     <ul>

@@ -75,6 +75,7 @@ section .email {
     left: -20px;
     top: 440px;
     padding: 0%;
+    user-select: none;
 }
 
 @media screen and (max-width: 319px) {

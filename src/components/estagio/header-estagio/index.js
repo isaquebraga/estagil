@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 
-import "./header-home.css";
+import "./header-estagio.css";
 
-class HeaderHome extends Component {
+class HeaderEstagio extends Component {
     render(){
         return(
             <>
@@ -11,8 +11,8 @@ class HeaderHome extends Component {
                 <span>EstÁgil</span>
                 <nav>
                 <ul>
-                    <li><Link to='/' className="lista-hover active"><a>Início</a></Link></li>
-                    <li><Link to='/estagios' className="lista-hover"><a>Estágios</a></Link></li>
+                    <li><Link to='/' className="lista-hover"><a>Início</a></Link></li>
+                    <li><Link to='/estagios' className="lista-hover active"><a>Estágios</a></Link></li>
                     <li className="menu-suspenso">
                     <a className="lista-login">Login</a>
                     <ul>
@@ -28,4 +28,4 @@ class HeaderHome extends Component {
     }
 }
 
-export default HeaderHome;
+export default HeaderEstagio;
