@@ -37,7 +37,7 @@ class SectionLogin extends Component {
                     </div>
                     <div className="footer-form">
                         <p className="forget">Esqueceu sua senha? <Link to='/'>Esqueci.</Link></p>
-                        <li><Link to='/estagios' className="lista-hover"><a>Estágios</a></Link></li>
+                        <Link to='/home-logado'><button>Login</button></Link>
                         <p className="create">Não possui uma conta? <Link to='/cadastro'>Cadastrar.</Link></p>
                     </div>
                 </form>

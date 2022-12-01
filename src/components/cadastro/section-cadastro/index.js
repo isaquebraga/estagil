@@ -40,7 +40,7 @@ class SectionCadastro extends Component {
                         </div>
                     </div>
                     <div className="footer-form">
-                        <Link to='/estagios'><button>Cadastrar</button></Link>
+                        <Link to='/login-aluno'><button>Cadastrar</button></Link>
                     </div>
                 </form>
             </div>

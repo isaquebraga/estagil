@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-section {
+    background-color: #EFEAE6;
+    font-family: 'Poppins';
+}
+
+section .email {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+}
+
+.meio {
+    background-color: #EFEAE6;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meio h1 {
+    text-align: center;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 80%;
+}
+
+.texto-meio {
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 80px;
+}
+
+.texto-saiba-mais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.texto-saiba-mais p {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.redes {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.texto-background {
+    font-weight: 700;
+    font-size: 150px;
+    opacity: 0.05;
+    position: absolute;
+    left: -20px;
+    top: 440px;
+    padding: 0%;
+    user-select: none;
+}
+
+@media screen and (max-width: 319px) {
+    .meio {
+        width: 120vw;
+    }
+
+    .meio h1 {
+        padding-top: 150px;
+        font-size: 50px;
+    }
+
+    .texto-meio {
+        font-size: 15px; 
+    }
+
+    .texto-saiba-mais {
+        padding-top: 200px;
+    }
+
+    main section .email {
+        top: 80%;
+    }
+
+    .redes {
+        right: -10%;
+    }
+
+    .texto-background {
+        top: 500px;
+        font-size: 100px;
+    }
+}
+
+/* tela de celular */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .meio h1 {
+        padding-top: 150px;
+        font-size: 150px;
+    }
+
+    .texto-saiba-mais {
+        padding-top: 330px;
+    }
+
+    .texto-background {
+        top: 600px;
+        font-size: 100px;
+    }
+}
+
+/* tela de tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .meio h1 {
+        padding-top: 40px;
+        font-size: 200px;
+    }
+
+    .texto-background {
+        top: 600px;
+    }
+
+    .texto-meio {
+        font-size: 15px;
+        padding-top: 100px;
+    }
+
+    .texto-saiba-mais {
+        padding-top: 240px;
+    }
+}
+
+/* tela de notebook */
+@media screen and (min-width: 1024px) and (max-width: 1679px) {
+}
+
+/* tela de desktop */
+@media screen and (min-width: 1680px) {
+    .meio h1 {
+        padding-top: 40px;
+        font-size: 250px;
+    }
+
+    .texto-background {
+        top: 700px;
+    }
+
+    .texto-meio {
+        padding-top: 70px;
+    }
+
+    .texto-saiba-mais {
+        padding-top: 250px;
+    }
+}
