@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from "./pages/Home";
-import LoginAluno from "./pages/LoginAluno";
+import Login from "./pages/LoginAluno";
 import Cadastro from "./pages/Cadastro";
 import Estagio from "./pages/Estagios";
 import HomeLogado from "./pages/Logado/HomeLogado";
@@ -16,7 +16,7 @@ function App() {
             <Router>
             <Routes >
                 <Route path='/' element={<Home/>} />
-                <Route path='/login-aluno' element={<LoginAluno/>} />
+                <Route path='/login' element={<Login/>} />
                 <Route path='/cadastro' element={<Cadastro/>} />
                 <Route path='/estagios' element={<Estagio/>} />
                 <Route path='/home-logado' element={<HomeLogado/>} />

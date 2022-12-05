@@ -18,7 +18,7 @@ class SectionCadastro extends Component {
                 <form>
                     <div className="input">
                         <label htmlFor="text">Nome</label>
-                        <input type="texte" id="text" />
+                        <input type="text" id="text" />
                     </div>
                     <div className="input">
                         <label htmlFor="email">Email</label>
@@ -39,8 +39,12 @@ class SectionCadastro extends Component {
                                                                                             });}}/>
                         </div>
                     </div>
+                    <div className="input">
+                        <label htmlFor="bio">Formação</label>
+                        <input type="text" id="bio" />
+                    </div>
                     <div className="footer-form">
-                        <Link to='/login-aluno'><button>Cadastrar</button></Link>
+                        <Link to='/login'><button>Cadastrar</button></Link>
                     </div>
                 </form>
             </div>

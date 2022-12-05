@@ -61,6 +61,7 @@ body {
     height: 20%;
     position: absolute;
     bottom: -10%;
+    right: 15%;
     display: flex;
     justify-content: center;
     align-items: center;

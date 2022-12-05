@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
 import "./section-estagio.css";
 
@@ -14,21 +15,21 @@ class SectionEstagio extends Component {
                             <p className="requisitos">Estar cursando o nível técnico na área da tecnologia.</p>
                             <p className="salario">Sem remuneração.</p>
                             <p className="mais-informacoes">Mais informações clicando aqui.</p>
-                            <div className="inscrever"><p>Se inscrever</p></div>
+                            <Link to='/login'><div className="inscrever"><p>Se inscrever</p></div></Link>
                         </div>
                         <div className="estagio">
                             <p className="titulo">Estágio de TI</p>
                             <p className="requisitos">Estar cursando o nível técnico na área da tecnologia.</p>
                             <p className="salario">Sem remuneração.</p>
                             <p className="mais-informacoes">Mais informações clicando aqui.</p>
-                            <div className="inscrever"><p>Se inscrever</p></div>
+                            <Link to='/login'><div className="inscrever"><p>Se inscrever</p></div></Link>
                         </div>
                         <div className="estagio">
                             <p className="titulo">Estágio de TI</p>
                             <p className="requisitos">Estar cursando o nível técnico na área da tecnologia.</p>
                             <p className="salario">Sem remuneração.</p>
                             <p className="mais-informacoes">Mais informações clicando aqui.</p>
-                            <div className="inscrever"><p>Se inscrever</p></div>
+                            <Link to='/login'><div className="inscrever"><p>Se inscrever</p></div></Link>
                         </div>
                     </div>
                     <div className="texto-mais">

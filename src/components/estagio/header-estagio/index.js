@@ -11,15 +11,9 @@ class HeaderEstagio extends Component {
                 <span>EstÁgil</span>
                 <nav>
                 <ul>
-                    <li><Link to='/' className="lista-hover"><a>Início</a></Link></li>
+                <li><Link to='/' className="lista-hover"><a>Início</a></Link></li>
                     <li><Link to='/estagios' className="lista-hover active"><a>Estágios</a></Link></li>
-                    <li className="menu-suspenso">
-                    <a className="lista-login">Login</a>
-                    <ul>
-                        <li><Link to='/login-aluno'>Aluno</Link></li>
-                        <li><a href="#">Empresa</a></li>
-                    </ul>
-                    </li>
+                    <li><Link to='/login' className="lista-hover"><a>Login</a></Link></li>
                 </ul>
                 </nav>
             </header>
