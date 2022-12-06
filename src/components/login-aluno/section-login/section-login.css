@@ -114,8 +114,21 @@ body {
 }
 
 @media screen and (min-width: 1680px) {
+    .section-login {
+        padding-top: 131px;
+        padding-bottom: 150px;
+    }
+
+    .section-login .content-left {
+        margin-right: 300px;
+    }
+
+    .section-login .content-right {
+        margin-left: 300px;
+    }
+
     .section-login .content-left form {
-        margin-top: 25%;
+        margin-top: 5%;
     }
 
     .section-login .input input {
@@ -139,7 +152,7 @@ body {
     }
     
     .section-login .content-right h1 {
-        font-size: 250px;
-        line-height: 240px;
+        font-size: 200px;
+        line-height: 200px;
     }
 }

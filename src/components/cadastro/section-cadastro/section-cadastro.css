@@ -113,8 +113,21 @@ body {
 }
 
 @media screen and (min-width: 1680px) {
+    .section-cadastro {
+        padding-top: 100px;
+        padding-bottom: 141px;
+    }
+
     .section-cadastro .content-left form {
-        margin-top: 210px;
+        margin-top: 60px;
+    }
+
+    .section-cadastro .content-left {
+        margin-right: 300px;
+    }
+
+    .section-cadastro .content-right {
+        margin-left: 300px;
     }
 
     .section-cadastro .input input {
@@ -138,7 +151,7 @@ body {
     }
     
     .section-cadastro .content-right h1 {
-        font-size: 250px;
-        line-height: 240px;
+        font-size: 200px;
+        line-height: 200px;
     }
 }

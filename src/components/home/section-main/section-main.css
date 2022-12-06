@@ -155,7 +155,7 @@ section .email {
 /* tela de desktop */
 @media screen and (min-width: 1680px) {
     .meio h1 {
-        padding-top: 40px;
+        padding-top: 90px;
         font-size: 250px;
     }
 
@@ -164,7 +164,7 @@ section .email {
     }
 
     .texto-meio {
-        padding-top: 70px;
+        padding-top: 90px;
     }
 
     .texto-saiba-mais {
