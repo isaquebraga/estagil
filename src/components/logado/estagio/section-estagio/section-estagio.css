@@ -25,6 +25,10 @@ body {
     justify-content: space-around;
 }
 
+.section-estagio .estagios-2 {
+    padding-top: 50px;
+}
+
 .section-estagio .estagios .estagio {
     display: flex;
     flex-direction: column;
@@ -61,6 +65,7 @@ body {
     height: 20%;
     position: absolute;
     bottom: -10%;
+    right: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,3 +89,16 @@ body {
     font-size: 15px;
 }
 
+@media screen and (min-width: 1680px) {
+    .section-estagio .estagios {
+        width: 100%;
+    }
+
+    .section-estagio .estagios-2 {
+        padding-top: 100px;
+    }
+
+    .section-estagio .texto-mais {
+        margin-top: -20px;
+    }
+}

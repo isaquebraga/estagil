@@ -60,3 +60,12 @@
     font-weight: 400;
 }
 
+@media screen and (min-width: 1680px) {
+    .section-perfil .container-user {
+        padding-top: 6em;
+    }
+    
+    .section-perfil .user .imagem {
+        left: -10%;
+    }
+}
