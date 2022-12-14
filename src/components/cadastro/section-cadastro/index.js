@@ -25,17 +25,15 @@ function SectionCadastro() {
         };
 
        if(window.confirm("Confirma os dados?")) {
-        await axios.post(url, dados);
-
         setTimeout(function(){
             window.location.replace("http://localhost:3000/login");
-        }, 1); 
+        }, 1);
+        await axios.post(url, dados); 
        } else {
-        alert("Preencha novamente.")
-
         setTimeout(function(){
             window.location.replace("http://localhost:3000/cadastro");
         }, 1); 
+        alert("Preencha novamente.")
        }
     }
 

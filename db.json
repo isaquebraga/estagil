@@ -1,4 +1,11 @@
 {
   "user": [
+    {
+      "id": 1,
+      "nome": "Isaque de Souza Braga",
+      "email": "isaquesouzabraga@gmail.com",
+      "senha": "isaque2004",
+      "bio": "Técnico em Desenvolvimento de Sistemas"
+    }
   ]
 }
