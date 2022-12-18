@@ -1,4 +1,4 @@
-import React, { Component, useState, useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { Link } from 'react-router-dom';
 
 import eye from "../../../assets/img/eye.svg";
@@ -6,7 +6,6 @@ import eye from "../../../assets/img/eye.svg";
 import "./section-login.css"
 
 function SectionLogin() {
-    const [data, setData] = useState([]);
     const FormRef = useRef();
     const url = "http://localhost:5000/user/1";
     
@@ -24,7 +23,7 @@ function SectionLogin() {
             "senha": senha.value,  
         };
 
-        if(dados.email == userData.email && dados.senha == userData.senha) {
+        if(dados.email === userData.email && dados.senha === userData.senha) {
             setTimeout(function(){
                 window.location.replace("http://localhost:3000/home-logado");
             }, 1); 
@@ -56,7 +55,7 @@ function SectionLogin() {
                     <img id="olho" className="input-password-img" src={eye} alt="" onClick={() =>{let btn = document.querySelector('.input-password-img');
                                                                                         btn.addEventListener('click', function() {
                                                                                             let input = document.querySelector('.input-password-input');
-                                                                                            if(input.getAttribute('type') == 'password') {
+                                                                                            if(input.getAttribute('type') === 'password') {
                                                                                                 input.setAttribute('type', 'text');
                                                                                             } else {
                                                                                                 input.setAttribute('type', 'password');

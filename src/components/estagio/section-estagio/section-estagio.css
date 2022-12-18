@@ -56,7 +56,9 @@ body {
 }
 
 .section-estagio .estagios .estagio .mais-informacoes {
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 .section-estagio .estagios .estagio .inscrever {
