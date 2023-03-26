@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect, userData } from "react";
+import blogFetch from "../../../axios/config";
 import { Link } from 'react-router-dom';
 
 import eye from "../../../assets/img/eye.svg";
@@ -7,13 +8,22 @@ import "./section-login.css"
 
 function SectionLogin() {
     const FormRef = useRef();
-    const url = "http://localhost:5000/user/1";
-    
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", url, false);
-    xhttp.send();
 
-    const userData = JSON.parse(xhttp.responseText);
+    const [usuarios, setUsuario] = useState([]);
+
+    const getUsuario = async () => {
+        try {
+            const response = await blogFetch.get("/users");
+            const data = response.data;
+            setUsuario(data);
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
+    useEffect(() => {
+        getUsuario();
+    }, [])
 
     async function inputaDados() {
         const {email} = FormRef.current;
@@ -23,7 +33,11 @@ function SectionLogin() {
             "senha": senha.value,  
         };
 
-        if(dados.email === userData.email && dados.senha === userData.senha) {
+        const emailUsuario = usuarios.map((usuario) => (usuario.email));
+        const senhaUsuario = usuarios.map((usuario) => (usuario.senha));
+
+
+        if(dados.email == emailUsuario && dados.senha == senhaUsuario) {
             setTimeout(function(){
                 window.location.replace("http://localhost:3000/home-logado");
             }, 1); 

@@ -1,17 +1,27 @@
 import React from "react";
+import { useState, useEffect, userData } from "react";
+import blogFetch from "../../../../axios/config";
 
 import "./section-perfil.css";
 
 import user from "../../../../assets/img/user.svg";
 
 function SectionPerfil() {
-    const url = "http://localhost:5000/user/1";
-    
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", url, false);
-    xhttp.send();
+    const [usuarios, setUsuario] = useState([]);
 
-    const userData = JSON.parse(xhttp.responseText);
+    const getUsuario = async () => {
+        try {
+            const response = await blogFetch.get("/users");
+            const data = response.data;
+            setUsuario(data);
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
+    useEffect(() => {
+        getUsuario();
+    }, [])
 
     return(
         <>
@@ -25,15 +35,15 @@ function SectionPerfil() {
                     <div className="container-info">
                         <div className="texto">
                             <p className="texto-titulo">Nome:</p>
-                            <p className="texto-sub">{userData.nome}</p>
+                            <p className="texto-sub">{usuarios.map((usuario) => (usuario.nome))}</p>
                         </div>
                         <div className="texto">
                             <p className="texto-titulo">Email:</p>
-                            <p className="texto-sub">{userData.email}</p>
+                            <p className="texto-sub">{usuarios.map((usuario) => (usuario.email))}</p>
                         </div>
                         <div className="texto">
                             <p className="texto-titulo">Bio:</p>
-                            <p className="texto-sub">{userData.bio}</p>
+                            <p className="texto-sub">{usuarios.map((usuario) => (usuario.descricao))}</p>
                         </div>
                     </div>
                 </div>        

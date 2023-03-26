@@ -1,41 +1,32 @@
-import React, { Component, useState, useRef } from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import { Form, Link } from 'react-router-dom';
 
 import eye from "../../../assets/img/eye.svg";
 
 import "./section-cadastro.css";
 
 function SectionCadastro() {
-    const [data, setData] = useState([]);
-    const FormRef = useRef();
-    const url = "http://localhost:5000/user";
+    const [nome, setNome] = useState();
+    const [email, setEmail] = useState();
+    const [senha, setSenha] = useState();
+    const [descricao, setDescricao] = useState();
 
-    async function inputaDados() {
-        const {nome} = FormRef.current;
-        const {email} = FormRef.current;
-        const {senha} = FormRef.current;
-        const {bio} = FormRef.current;
-        const dados = {
-            "id": 1,
-            "nome": nome.value,
-            "email": email.value,
-            "senha": senha.value,
-            "bio": bio.value
-        };
-
-       if(window.confirm("Confirma os dados?")) {
-        setTimeout(function(){
-            window.location.replace("http://localhost:3000/login");
-        }, 1);
-        await axios.post(url, dados); 
-       } else {
-        setTimeout(function(){
-            window.location.replace("http://localhost:3000/cadastro");
-        }, 1); 
-        alert("Preencha novamente.")
-       }
+    function mudarUrl(novaUrl) {
+        window.location.href = novaUrl;
     }
+
+    const createUsuario = async (e) => {
+        e.preventDefault();
+
+        await axios.post("https://tepi.isaquebrag.repl.co/users", {
+            nome: nome,
+            email: email,
+            senha: senha, 
+            descricao: descricao,
+        });
+
+        mudarUrl("http://localhost:3000/login");
+    };
 
     return(
         <>
@@ -45,19 +36,19 @@ function SectionCadastro() {
             <h1>Ágil</h1>
         </div>
         <div className="content-left">
-            <form onSubmit={inputaDados} ref={FormRef}>
+            <form onSubmit={(e) => createUsuario(e)}>
                 <div className="input">
                     <label htmlFor="nome">Nome</label>
-                    <input type="text" id="nome" />
+                    <input type="text" id="nome" name="nome" onChange={(e) => setNome(e.target.value)}/>
                 </div>
                 <div className="input">
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" />
+                    <input type="email" id="email" name="email" onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <div className="input">
                     <label htmlFor="senha">Senha</label>
                     <div className="input-password">
-                    <input className="input-password-input" type="password" id="senha" />
+                    <input className="input-password-input" type="password" id="senha" name="senha" onChange={(e) => setSenha(e.target.value)}/>
                     <img className="input-password-img" src={eye} alt="" onClick={() =>{let btn = document.querySelector('.input-password-img');
                                                                                         btn.addEventListener('click', function() {
                                                                                             let input = document.querySelector('.input-password-input');
@@ -70,8 +61,8 @@ function SectionCadastro() {
                     </div>
                 </div>
                 <div className="input">
-                    <label htmlFor="bio">Formação</label>
-                    <input type="text" id="bio" />
+                    <label htmlFor="descricao">Formação</label>
+                    <input type="text" id="descricao" name="descricao" onChange={(e) => setDescricao(e.target.value)}/>
                 </div>
                 <div className="footer-form">
                     <button type="submit">Cadastrar</button>
