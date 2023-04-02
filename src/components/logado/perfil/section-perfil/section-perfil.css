@@ -61,6 +61,26 @@
     margin-left: 1em;
 }
 
+.section-perfil .perfil-bottom {
+    width: 100vw;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-perfil .perfil-bottom button {
+    font-family: "Poppins";
+    border: none;
+    background-color: #000;
+    color: #FFF;
+    width: 10em;
+    height: 3em;
+    border-radius: 5em;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1680px) {
     .section-perfil .container-user {
         padding-top: 6em;

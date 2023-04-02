@@ -38,15 +38,15 @@ function SectionCadastro() {
         <div className="content-left">
             <form onSubmit={(e) => createUsuario(e)}>
                 <div className="input">
-                    <label htmlFor="nome">Nome</label>
+                    <label htmlFor="nome">Nome*</label>
                     <input type="text" id="nome" name="nome" onChange={(e) => setNome(e.target.value)}/>
                 </div>
                 <div className="input">
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">Email*</label>
                     <input type="email" id="email" name="email" onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <div className="input">
-                    <label htmlFor="senha">Senha</label>
+                    <label htmlFor="senha">Senha*</label>
                     <div className="input-password">
                     <input className="input-password-input" type="password" id="senha" name="senha" onChange={(e) => setSenha(e.target.value)}/>
                     <img className="input-password-img" src={eye} alt="" onClick={() =>{let btn = document.querySelector('.input-password-img');

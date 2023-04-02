@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect, userData } from "react";
 import blogFetch from "../../../../axios/config";
+import axios from "axios";
 
 import "./section-perfil.css";
 
@@ -22,6 +23,18 @@ function SectionPerfil() {
     useEffect(() => {
         getUsuario();
     }, [])
+
+    function deleteUsuario() {
+        if (window.confirm("Deseja mesmo apagar sua conta?")) {
+            var id = usuarios.map((usuario) => (usuario.id_user));
+            axios.delete("https://tepi.isaquebrag.repl.co/users/" + id);
+            setTimeout(function(){
+                window.location.replace("http://localhost:3000/");
+            }, 2000); 
+        } else {
+            window.location.replace("http://localhost:3000/perfil");
+        }
+    }
 
     return(
         <>
@@ -47,6 +60,9 @@ function SectionPerfil() {
                         </div>
                     </div>
                 </div>        
+            </div>
+            <div className="perfil-bottom">
+                <button onClick={(e) => deleteUsuario(e)}>Apagar conta</button>
             </div>
         </section>
         </>

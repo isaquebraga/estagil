@@ -32,7 +32,7 @@ function SectionEstagio() {
                         <p className="requisitos">{estagio.requisitos}</p>
                         <p className="salario">{estagio.salario}</p>
                         <p className="mais-informacoes">{estagio.informacoes}</p>
-                        <a href="http://localhost:3000/login"><div className="inscrever"><p>{estagio.inscricao}</p></div></a>
+                        <a href="https://google.com" target="_blank"><div className="inscrever"><p>{estagio.inscricao}</p></div></a>
                         </div>
                     ))}
                 </div>
