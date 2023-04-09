@@ -113,6 +113,14 @@ body {
     line-height: 160px;
 }
 
+.section-cadastro .input-div-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 0 1.5em;
+}
+
 @media screen and (min-width: 1680px) {
     .section-cadastro {
         padding-top: 100px;

@@ -5,9 +5,9 @@ import axios from "axios";
 
 import "./section-perfil.css";
 
-import user from "../../../../assets/img/user.svg";
-
 function SectionPerfil() {
+    const url = "https://image-upload.isaquebrag.repl.co/display/profile.jpg";
+
     const [usuarios, setUsuario] = useState([]);
 
     const getUsuario = async () => {
@@ -43,7 +43,7 @@ function SectionPerfil() {
             <div className="container-user">
                 <div className="user">
                     <div className="imagem">
-                        <img src={user} alt="" />
+                        <img src={url} alt="" />
                     </div>
                     <div className="container-info">
                         <div className="texto">
